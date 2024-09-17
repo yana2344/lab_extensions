@@ -1,46 +1,59 @@
-# Getting Started with Create React App
+# Домашнє завдання: Створення криптогаманця на основі Chrome Extension
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Опис
 
-## Available Scripts
+Це домашнє завдання спрямоване на вивчення основ роботи з криптогаманцями та розширеннями для браузера Chrome. Завдання включає:
 
-In the project directory, you can run:
+1. Огляд криптогаманців і принципів їхньої роботи.
+2. Огляд роботи Chrome extensions та створення власного розширення.
+3. Додавання публічного ключа для криптогаманця у вигляді інпуту в створеному розширенні.
 
-### `yarn start`
+## Покрокові інструкції
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### 1. Прочитайте статті для розуміння теми
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- **Про криптогаманці:** Ознайомтеся з основними концепціями роботи криптогаманців за допомогою [цієї статті](https://solana.com/developers/guides/intro/wallets-explained).
+- **Про Chrome Extensions:** Прочитайте [цю статтю](https://dev.to/sayan11/how-chrome-extensions-work-54bo) для розуміння, як працюють Chrome extensions.
 
-### `yarn test`
+> Якщо ви хочете практично зрозуміти, як працюють Chrome extensions, рекомендується пройти цей [гайд](https://hackernoon.com/how-to-create-a-chrome-extension-with-react) і створити власне розширення.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 2. Збір репозиторію та запуск
 
-### `yarn build`
+1. Завантажте або склонуйте репозиторій з темплейтом під це завдання.
+2. Встановіть залежності командою:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```
+   npm install
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Для розробки використовуйте команду:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```
+   npm start
+   ```
 
-### `yarn eject`
+   Ця команда дозволить вам запустити проект у режимі hot-reload для зручної розробки.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+4. Для створення білда використовуйте команду:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```
+   npm run build
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### 3. Додавання функціоналу гаманця
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+На сторінці гаманця додайте інпут, який прийматиме публічний ключ користувача. Використовуйте цей ключ для генерації криптографічної адреси.
 
-## Learn More
+1. Додайте HTML-елемент `<input>` для введення публічного ключа.
+2. Використовуйте бібліотеки Solana для роботи з публічними ключами та генерації адреси.
+3. Перевірте, чи коректно працює функція обробки ключів.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 4. Рекомендації
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Якщо зіткнетеся з проблемами, пов'язаними з поліфілами або несумісностями, звертайтеся до чату для допомоги.
+- Для роботи з Solana використовуйте бібліотеки, які ви вже опанували під час попередніх лабораторних робіт.
+
+## Додаткова інформація
+
+- Для кращого розуміння роботи гаманців і безпеки рекомендується ознайомитися з криптографічними концепціями.
+- Будьте готові до тестування вашого розширення в браузері Chrome після білду.
